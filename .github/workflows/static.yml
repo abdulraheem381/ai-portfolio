@@ -1,43 +1,62 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["main"]        # Change to "master" if that's your default branch
+  workflow_dispatch:         # Allows manual trigger
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # 1. Checkout code
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      # 2. Setup Node (change version if needed)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          node-version: '20'          # or 18, 22, etc.
+          cache: 'npm'                # or 'yarn' or 'pnpm'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm ci                     # npm ci is cleaner than npm install
+
+      # 4. Build the site
+      - name: Build
+        run: npm run build              # Make sure this script exists in package.json
+        env:
+          # Important for SPAs (React, Vite, etc.) - set correct base path
+          BASE_PATH: /${{ github.event.repository.name }}/
+
+      # 5. (Optional but recommended) Add .nojekyll for SPAs or if you have files starting with _
+      - name: Add .nojekyll
+        run: touch ./dist/.nojekyll     # Change ./dist to your build folder if different
+
+      # 6. Deploy to GitHub Pages
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist            # ⚠️ CHANGE THIS if your build folder is different
+          # Common alternatives:
+          # - Vite/React → ./dist
+          # - Next.js   → ./out       (for `next export`)
+          # - Nuxt 3    → ./dist
+          # - Astro     → ./dist
+          # - Hugo      → ./public
+          # - Jekyll    → ./_site
+          # - Plain HTML → ./ (root)
+          force_orphan: true
+          allow_empty_commit: false
