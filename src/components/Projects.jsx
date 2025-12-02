@@ -106,7 +106,7 @@ const Projects = () => {
                 </div>
 
                 <div className="text-center mt-12">
-                    <a href="#" className="inline-block px-8 py-3 border border-accent-cyan text-accent-cyan font-bold rounded-full hover:bg-accent-cyan hover:text-primary transition-all duration-300">
+                    <a href="https://github.com/abdurraheem123" className="inline-block px-8 py-3 border border-accent-cyan text-accent-cyan font-bold rounded-full hover:bg-accent-cyan hover:text-primary transition-all duration-300">
                         View All Projects
                     </a>
                 </div>
