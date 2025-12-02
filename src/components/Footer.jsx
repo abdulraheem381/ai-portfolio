@@ -16,11 +16,11 @@ const Footer = () => {
                     </div>
 
                     <div className="flex space-x-6 mb-6 md:mb-0">
-                        <a href="#" className="text-text-muted hover:text-accent-cyan transition-colors"><FaGithub size={20} /></a>
+                        <a href="https://github.com/abdulraheem381" className="text-text-muted hover:text-accent-cyan transition-colors"><FaGithub size={20} /></a>
                         <a href="#" className="text-text-muted hover:text-accent-cyan transition-colors"><FaLinkedin size={20} /></a>
-                        <a href="#" className="text-text-muted hover:text-accent-cyan transition-colors"><FaTwitter size={20} /></a>
+                        <a href="https://x.com/abdulraheem381" className="text-text-muted hover:text-accent-cyan transition-colors"><FaTwitter size={20} /></a>
                         <a href="#" className="text-text-muted hover:text-accent-cyan transition-colors"><FaInstagram size={20} /></a>
-                        <a href="mailto:contact@example.com" className="text-text-muted hover:text-accent-cyan transition-colors"><FaEnvelope size={20} /></a>
+                        <a href="mailto:contact@shadowpulse.pentest@gmail.com" className="text-text-muted hover:text-accent-cyan transition-colors"><FaEnvelope size={20} /></a>
                     </div>
                 </div>
 
