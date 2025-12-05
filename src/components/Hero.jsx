@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaDownload, FaPlay } from 'react-icons/fa';
+import { FaArrowRight, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
 
     return (
-        <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-primary">
+        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
             {/* Background Animation (Abstract Neural Network) */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-primary to-black opacity-90"></div>
@@ -26,22 +25,22 @@ const Hero = () => {
                 />
             </div>
 
-            <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center">
+            <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-center h-full pt-20 md:pt-0">
                 {/* Text Content */}
-                <div className="md:w-1/2 text-center md:text-left">
+                <div className="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-accent-cyan font-mono text-lg mb-4 tracking-widest">
+                        <h2 className="text-accent-cyan font-mono text-sm md:text-lg mb-4 tracking-widest">
                             ABDUL RAHEEM — AI/ML ENGINEER
                         </h2>
-                        <h1 className="text-5xl md:text-7xl font-bold font-heading text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-7xl font-bold font-heading text-white mb-6 leading-tight">
                             Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-violet">Intelligent Systems</span> <br />
                             & AI Solutions
                         </h1>
-                        <p className="text-text-muted text-lg mb-8 max-w-lg mx-auto md:mx-0">
+                        <p className="text-text-muted text-base md:text-lg mb-8 max-w-lg mx-auto md:mx-0">
                             Specializing in Machine Learning, Deep Learning, and Data Science.
                             I transform complex data into actionable insights and powerful automation.
                         </p>
@@ -65,49 +64,45 @@ const Hero = () => {
                 </div>
 
                 {/* Hero Image / Video Container */}
-                <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
+                <div className="md:w-1/2 flex justify-center relative w-full mt-12 md:mt-0">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative w-96 h-96 md:w-[600px] md:h-[400px] rounded-2xl overflow-hidden border-2 border-accent-cyan/30 shadow-[0_0_30px_rgba(0,243,255,0.2)] group"
+                        className="relative w-full max-w-[350px] aspect-square md:w-[500px] md:h-[500px] md:aspect-square flex justify-center items-center"
                     >
-                        {!isPlaying ? (
-                            /* Thumbnail & Play Button */
-                            <div className="absolute inset-0 flex items-center justify-center z-20">
-                                <img
-                                    src="/video-poster.svg"
-                                    alt="Video Thumbnail"
-                                    className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity duration-300"
-                                />
-                                <button
-                                    onClick={() => setIsPlaying(true)}
-                                    className="relative z-30 w-20 h-20 bg-accent-cyan/20 backdrop-blur-sm border-2 border-accent-cyan rounded-full flex items-center justify-center text-accent-cyan hover:bg-accent-cyan hover:text-primary transition-all duration-300 group-hover:scale-110 shadow-[0_0_20px_rgba(0,243,255,0.4)]"
-                                >
-                                    <FaPlay className="ml-1 text-3xl" />
-                                </button>
-                                {/* Pulse Effect */}
-                                <div className="absolute z-10 w-20 h-20 bg-accent-cyan/20 rounded-full animate-ping"></div>
-                            </div>
-                        ) : (
-                            /* Active Video Player */
-                            <video
-                                className="w-full h-full object-cover"
-                                autoPlay
-                                controls
-                                controlsList="nodownload"
-                                poster="/video-poster.svg"
-                            >
-                                <source src="/intro.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        )}
+                        {/* Rotating Glow Ring */}
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-0 rounded-full border-2 border-dashed border-accent-cyan/30"
+                        ></motion.div>
 
-                        {/* Decorative Corners */}
-                        <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-accent-cyan"></div>
-                        <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-accent-cyan"></div>
-                        <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-accent-cyan"></div>
-                        <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-accent-cyan"></div>
+                        {/* Reverse Rotating Ring */}
+                        <motion.div
+                            animate={{ rotate: -360 }}
+                            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-4 rounded-full border border-accent-violet/30"
+                        ></motion.div>
+
+                        {/* Main Image Container */}
+                        <motion.div
+                            animate={{ y: [0, -15, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                            className="relative w-[90%] h-[90%] rounded-full overflow-hidden border-4 border-accent-cyan/20 shadow-[0_0_60px_rgba(0,243,255,0.2)] z-10 bg-black"
+                        >
+                            <img
+                                src="/home_image.png"
+                                alt="Abdul Raheem"
+                                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                            />
+
+                            {/* Inner Glow */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent pointer-events-none"></div>
+                        </motion.div>
+
+                        {/* Background Glow Blob */}
+                        <div className="absolute inset-0 bg-gradient-to-tr from-accent-cyan/20 to-accent-violet/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
                     </motion.div>
                 </div>
             </div>
