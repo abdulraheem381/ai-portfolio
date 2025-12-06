@@ -56,7 +56,7 @@ const Navbar = () => {
                         href="#contact"
                         className="px-6 py-2 border border-accent-cyan text-accent-cyan hover:bg-accent-cyan hover:text-primary transition-all duration-300 rounded-full font-medium text-sm"
                     >
-                        Hire Me
+                        Let's Work Together
                     </a>
                 </div>
 

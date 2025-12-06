@@ -50,7 +50,7 @@ const Hero = () => {
                                 href="#contact"
                                 className="px-8 py-4 bg-accent-cyan text-primary font-bold rounded-full hover:bg-white transition-all duration-300 flex items-center justify-center gap-2 group"
                             >
-                                Hire Me <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+                                Let's Work Together <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                             </a>
                             <a
                                 href="/resume.html"
