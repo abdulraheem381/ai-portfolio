@@ -4,10 +4,10 @@ import { FaBrain, FaCode, FaRocket, FaLightbulb } from 'react-icons/fa';
 
 const About = () => {
     const milestones = [
-        { year: '2023', title: 'Started AI Journey', description: 'Dove deep into Python & ML algorithms.' },
-        { year: '2024', title: 'First ML Project', description: 'Built a predictive model for housing prices.' },
-        { year: '2025', title: 'Freelancing', description: 'Helping businesses integrate AI solutions.' },
-        { year: 'Future', title: 'AI Agency', description: 'Building a team to tackle global challenges.' },
+        { year: '2022', title: 'Started My CS Journey (Age 15)', description: 'Discovered computer science and began exploring programming, networks, and how systems work under the hood.' },
+        { year: '2023', title: 'Cybersecurity Internship', description: 'Gained hands-on experience in security fundamentals, vulnerability assessment, and real-world cyber-defense practices.' },
+        { year: '2024', title: 'DevOps & Engineering Projects', description: 'Started DevOps blogging, building end-to-end real-world projects, and diving deep into CI/CD, cloud, automation, and scalable infrastructure.' },
+        { year: '2025', title: 'Transition to AI/ML', description: 'Currently focused on mastering Machine Learning & Deep Learning, building intelligent systems, and shaping a new career path in AI/ML.' },
     ];
 
     return (
