@@ -4,10 +4,10 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Intro = ({ onComplete }) => {
     useEffect(() => {
-        // Auto-transition after 8 seconds if user doesn't click
+        // Auto-transition after 10 seconds if user doesn't click
         const timer = setTimeout(() => {
             onComplete();
-        }, 8000);
+        }, 10000);
         return () => clearTimeout(timer);
     }, [onComplete]);
 
