@@ -13,12 +13,12 @@ const Blogs = () => {
             link: "https://the-ai-journal.hashnode.dev/series/ai-journal-numpy"
         },
         {
-            title: "Building Scalable ML Pipelines",
-            category: "MLOps",
-            excerpt: "A comprehensive guide to setting up robust data pipelines using Airflow and Kubernetes.",
-            date: "Nov 02, 2023",
-            image: "bg-gradient-to-br from-blue-900 to-slate-900",
-            link: "https://hashnode.com/"
+            title: "The Pandas Playbook: Mastering Data Analysis for AI/ML",
+            category: "Data Science",
+            excerpt: "Master the Pandas library for AI/ML. This playbook is your guide to transforming raw data into structured datasets. Learn Series, DataFrames, advanced indexing, data cleaning, and aggregation techniques used in building powerful ML Models.",
+            date: "Dec 11, 2025",
+            image: "/blog2.png",
+            link: "https://the-ai-journal.hashnode.dev/series/the-pandas-playbook-data-analysis-ai-ml"
         },
         {
             title: "Understanding Transformers",
