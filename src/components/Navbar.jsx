@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/" className="text-2xl font-bold font-heading text-white tracking-wider">
+                <Link to="/" className="text-2xl font-bold font-heading text-text-main tracking-wider">
                     ABDUL <span className="text-accent-cyan">RAHEEM</span>
                 </Link>
 
@@ -58,13 +59,15 @@ const Navbar = () => {
                     >
                         Let's Work Together
                     </a>
+                    <ThemeToggle />
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden">
+                <div className="md:hidden flex items-center space-x-4">
+                    <ThemeToggle />
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="text-white hover:text-accent-cyan transition-colors"
+                        className="text-text-main hover:text-accent-cyan transition-colors"
                     >
                         {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                     </button>
@@ -78,7 +81,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 w-full bg-primary/95 backdrop-blur-xl border-t border-white/10 md:hidden"
+                        className="absolute top-full left-0 w-full bg-primary/95 backdrop-blur-xl border-t border-text-main/10 md:hidden"
                     >
                         <div className="flex flex-col items-center py-8 space-y-6">
                             {navLinks.map((link) => (

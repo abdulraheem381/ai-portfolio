@@ -8,7 +8,7 @@ const Hero = () => {
         <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
             {/* Background Animation (Abstract Neural Network) */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-primary to-black opacity-90"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-primary to-secondary opacity-90"></div>
                 <div className="absolute top-0 left-0 w-full h-full opacity-20"
                     style={{ backgroundImage: 'radial-gradient(#00f3ff 1px, transparent 1px)', backgroundSize: '50px 50px' }}>
                 </div>
@@ -36,7 +36,7 @@ const Hero = () => {
                         <h2 className="text-accent-cyan font-mono text-sm md:text-lg mb-4 tracking-widest">
                             ABDUL RAHEEM — AI/ML ENGINEER
                         </h2>
-                        <h1 className="text-4xl md:text-7xl font-bold font-heading text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-7xl font-bold font-heading text-text-main mb-6 leading-tight">
                             Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-violet">Intelligent Systems</span> <br />
                             & AI Solutions
                         </h1>
@@ -55,7 +55,7 @@ const Hero = () => {
                             <a
                                 href="/resume.html"
                                 download
-                                className="px-8 py-4 border border-white/20 text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
+                                className="px-8 py-4 border border-text-main/20 text-text-main font-bold rounded-full hover:bg-text-main/10 transition-all duration-300 flex items-center justify-center gap-2"
                             >
                                 Download Resume <FaDownload />
                             </a>
@@ -89,7 +89,7 @@ const Hero = () => {
                         <motion.div
                             animate={{ y: [0, -15, 0] }}
                             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                            className="relative w-[90%] h-[90%] rounded-full overflow-hidden border-4 border-accent-cyan/20 shadow-[0_0_60px_rgba(0,243,255,0.2)] z-10 bg-black"
+                            className="relative w-[90%] h-[90%] rounded-full overflow-hidden border-4 border-accent-cyan/20 shadow-[0_0_60px_rgba(0,243,255,0.2)] z-10 bg-secondary"
                         >
                             <img
                                 src="/home_image.png"
@@ -111,9 +111,9 @@ const Hero = () => {
             <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50"
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 text-text-muted"
             >
-                <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
+                <div className="w-6 h-10 border-2 border-text-main/30 rounded-full flex justify-center pt-2">
                     <div className="w-1 h-2 bg-accent-cyan rounded-full" />
                 </div>
             </motion.div>

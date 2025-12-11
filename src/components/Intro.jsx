@@ -64,7 +64,7 @@ const Intro = ({ onComplete }) => {
 
             <motion.h1
                 variants={itemVariants}
-                className="text-3xl md:text-5xl font-bold text-white mb-4 font-heading"
+                className="text-3xl md:text-5xl font-bold text-text-main mb-4 font-heading"
             >
                 Hi, I am <span className="text-accent-cyan">Abdul Raheem</span>
             </motion.h1>

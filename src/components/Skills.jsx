@@ -46,7 +46,7 @@ const Skills = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Technical <span className="text-accent-violet">Skills</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">Technical <span className="text-accent-violet">Skills</span></h2>
                     <div className="w-20 h-1 bg-accent-cyan mx-auto rounded-full"></div>
                 </motion.div>
 
@@ -60,7 +60,7 @@ const Skills = () => {
                             transition={{ delay: idx * 0.1 }}
                             className="bg-secondary/50 p-8 rounded-xl border border-white/5 hover:border-accent-cyan/30 transition-all duration-300"
                         >
-                            <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <h3 className="text-xl font-bold text-text-main mb-6 flex items-center gap-2">
                                 <span className="w-2 h-8 bg-accent-cyan rounded-full"></span>
                                 {category.category}
                             </h3>

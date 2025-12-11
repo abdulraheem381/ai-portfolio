@@ -57,7 +57,7 @@ const Projects = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured <span className="text-accent-violet">Projects</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">Featured <span className="text-accent-violet">Projects</span></h2>
                     <div className="w-20 h-1 bg-accent-cyan mx-auto rounded-full"></div>
                 </motion.div>
 
@@ -77,12 +77,12 @@ const Projects = () => {
                             {/* Overlay Content */}
                             <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-8">
                                 <span className="text-accent-cyan text-xs font-bold uppercase tracking-wider mb-2">{project.category}</span>
-                                <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+                                <h3 className="text-2xl font-bold text-text-main mb-2">{project.title}</h3>
                                 <p className="text-text-muted text-sm mb-4">{project.description}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tags.map((tag, tIdx) => (
-                                        <span key={tIdx} className="px-2 py-1 bg-white/10 rounded text-xs text-white">{tag}</span>
+                                        <span key={tIdx} className="px-2 py-1 bg-text-main/10 rounded text-xs text-text-main">{tag}</span>
                                     ))}
                                 </div>
 
@@ -98,7 +98,7 @@ const Projects = () => {
 
                             {/* Default Title (Visible when not hovering) */}
                             <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent group-hover:opacity-0 transition-opacity duration-300">
-                                <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                                <h3 className="text-lg font-bold text-text-main">{project.title}</h3>
                                 <span className="text-accent-cyan text-xs">{project.category}</span>
                             </div>
                         </motion.div>

@@ -66,7 +66,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In <span className="text-accent-cyan">Touch</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">Get In <span className="text-accent-cyan">Touch</span></h2>
                     <p className="text-text-muted max-w-xl mx-auto">
                         Have a project in mind or want to discuss AI solutions? I'm always open to new opportunities and collaborations.
                     </p>
@@ -85,7 +85,7 @@ const Contact = () => {
                                 <FaEnvelope />
                             </div>
                             <div>
-                                <h4 className="text-white font-bold text-lg">Email Me</h4>
+                                <h4 className="text-text-main font-bold text-lg">Email Me</h4>
                                 <a href="mailto:hello@abdul.ai" className="text-text-muted hover:text-accent-cyan transition-colors">shadowpulse.pentest@gmail.com</a>
                             </div>
                         </div>
@@ -95,13 +95,13 @@ const Contact = () => {
                                 <FaMapMarkerAlt />
                             </div>
                             <div>
-                                <h4 className="text-white font-bold text-lg">Location</h4>
+                                <h4 className="text-text-main font-bold text-lg">Location</h4>
                                 <p className="text-text-muted">Available Remote Worldwide</p>
                             </div>
                         </div>
 
                         <div className="p-6 bg-primary rounded-xl border border-white/5 mt-8">
-                            <h4 className="text-white font-bold mb-2">Availability</h4>
+                            <h4 className="text-text-main font-bold mb-2">Availability</h4>
                             <div className="flex items-center gap-2">
                                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
                                 <span className="text-green-400 text-sm">Open to new projects</span>
@@ -125,7 +125,7 @@ const Contact = () => {
                                         name="name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full bg-primary border border-white/10 rounded-lg p-4 text-white focus:border-accent-cyan focus:outline-none transition-colors"
+                                        className="w-full bg-primary border border-text-main/10 rounded-lg p-4 text-text-main focus:border-accent-cyan focus:outline-none transition-colors"
                                         placeholder="John Doe"
                                         required
                                     />
@@ -137,7 +137,7 @@ const Contact = () => {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full bg-primary border border-white/10 rounded-lg p-4 text-white focus:border-accent-cyan focus:outline-none transition-colors"
+                                        className="w-full bg-primary border border-text-main/10 rounded-lg p-4 text-text-main focus:border-accent-cyan focus:outline-none transition-colors"
                                         placeholder="john@example.com"
                                         required
                                     />
@@ -150,7 +150,7 @@ const Contact = () => {
                                     name="subject"
                                     value={formData.subject}
                                     onChange={handleChange}
-                                    className="w-full bg-primary border border-white/10 rounded-lg p-4 text-white focus:border-accent-cyan focus:outline-none transition-colors"
+                                    className="w-full bg-primary border border-text-main/10 rounded-lg p-4 text-text-main focus:border-accent-cyan focus:outline-none transition-colors"
                                 >
                                     <option value="Project Inquiry">Project Inquiry</option>
                                     <option value="Consultation">Consultation</option>
@@ -166,7 +166,7 @@ const Contact = () => {
                                     value={formData.message}
                                     onChange={handleChange}
                                     rows="5"
-                                    className="w-full bg-primary border border-white/10 rounded-lg p-4 text-white focus:border-accent-cyan focus:outline-none transition-colors"
+                                    className="w-full bg-primary border border-text-main/10 rounded-lg p-4 text-text-main focus:border-accent-cyan focus:outline-none transition-colors"
                                     placeholder="Tell me about your project..."
                                     required
                                 ></textarea>

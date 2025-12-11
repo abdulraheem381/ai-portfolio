@@ -45,7 +45,7 @@ const Services = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My <span className="text-accent-cyan">Services</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">My <span className="text-accent-cyan">Services</span></h2>
                     <div className="w-20 h-1 bg-accent-violet mx-auto rounded-full"></div>
                 </motion.div>
 
@@ -66,11 +66,11 @@ const Services = () => {
                                 <div className="w-14 h-14 bg-secondary rounded-lg flex items-center justify-center text-accent-cyan text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-white/10 group-hover:border-accent-cyan/30">
                                     {service.icon}
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent-cyan transition-colors">{service.title}</h3>
+                                <h3 className="text-xl font-bold text-text-main mb-3 group-hover:text-accent-cyan transition-colors">{service.title}</h3>
                                 <p className="text-text-muted text-sm leading-relaxed mb-6">
                                     {service.description}
                                 </p>
-                                <a href="#contact" className="inline-flex items-center text-accent-violet text-sm font-bold hover:text-white transition-colors">
+                                <a href="#contact" className="inline-flex items-center text-accent-violet text-sm font-bold hover:text-text-main transition-colors">
                                     Book a Call <span className="ml-2">&rarr;</span>
                                 </a>
                             </div>

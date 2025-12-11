@@ -6,6 +6,8 @@ import Preloader from './components/Preloader';
 import Intro from './components/Intro';
 import Home from './pages/Home';
 
+import { ThemeProvider } from './context/ThemeContext';
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [showIntro, setShowIntro] = useState(false);
@@ -24,23 +26,25 @@ function App() {
   };
 
   return (
-    <Router>
-      {loading ? (
-        <Preloader />
-      ) : showIntro ? (
-        <Intro onComplete={handleIntroComplete} />
-      ) : (
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <div className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-            </Routes>
+    <ThemeProvider>
+      <Router>
+        {loading ? (
+          <Preloader />
+        ) : showIntro ? (
+          <Intro onComplete={handleIntroComplete} />
+        ) : (
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <div className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+              </Routes>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-      )}
-    </Router>
+        )}
+      </Router>
+    </ThemeProvider>
   );
 }
 

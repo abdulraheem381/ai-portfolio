@@ -19,7 +19,7 @@ const About = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About <span className="text-accent-cyan">Me</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">About <span className="text-accent-cyan">Me</span></h2>
                     <div className="w-20 h-1 bg-accent-violet mx-auto rounded-full"></div>
                 </motion.div>
 
@@ -35,7 +35,7 @@ const About = () => {
                             <div className="absolute -inset-1 bg-gradient-to-r from-accent-cyan to-accent-violet rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                             <div className="relative bg-primary p-6 rounded-lg border border-white/10">
                                 <p className="text-text-muted leading-relaxed mb-4">
-                                    Hello! I'm <span className="text-white font-bold">Abdul</span>, a passionate AI/ML Engineer dedicated to building intelligent systems that solve real-world problems.
+                                    Hello! I'm <span className="text-text-main font-bold">Abdul</span>, a passionate AI/ML Engineer dedicated to building intelligent systems that solve real-world problems.
                                 </p>
                                 <p className="text-text-muted leading-relaxed mb-4">
                                     My journey began with a curiosity for how machines learn, which quickly turned into an obsession with <span className="text-accent-cyan">Deep Learning</span> and <span className="text-accent-violet">Generative AI</span>.
@@ -50,12 +50,12 @@ const About = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="bg-primary/50 p-4 rounded-lg border border-white/5 text-center hover:border-accent-cyan/50 transition-colors">
                                 <FaBrain className="text-accent-cyan text-2xl mx-auto mb-2" />
-                                <h4 className="text-white font-bold">Learner</h4>
+                                <h4 className="text-text-main font-bold">Learner</h4>
                                 <p className="text-xs text-text-muted">Always upskilling</p>
                             </div>
-                            <div className="bg-primary/50 p-4 rounded-lg border border-white/5 text-center hover:border-accent-violet/50 transition-colors">
-                                <FaRocket className="text-accent-violet text-2xl mx-auto mb-2" />
-                                <h4 className="text-white font-bold">Innovator</h4>
+                            <div className="flex flex-col items-center p-4 bg-secondary/50 rounded-xl border border-white/5 hover:border-accent-violet/30 transition-all">
+                                <span className="text-3xl mb-2">💡</span>
+                                <h4 className="text-text-main font-bold">Innovator</h4>
                                 <p className="text-xs text-text-muted">Building the future</p>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ const About = () => {
                         {milestones.map((item, index) => (
                             <div key={index} className="relative">
                                 <div className="absolute -left-[39px] top-0 w-5 h-5 bg-primary border-2 border-accent-cyan rounded-full"></div>
-                                <h3 className="text-xl font-bold text-white mb-1">{item.year}</h3>
+                                <h3 className="text-xl font-bold text-text-main mb-1">{item.year}</h3>
                                 <h4 className="text-accent-cyan text-sm font-bold mb-2 uppercase tracking-wider">{item.title}</h4>
                                 <p className="text-text-muted text-sm">{item.description}</p>
                             </div>

@@ -4,18 +4,19 @@ export default {
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
-                primary: "#0a0f1c", // Deep Blue
-                secondary: "#000000", // Black
+                primary: "rgb(var(--color-primary) / <alpha-value>)", // Deep Blue / White
+                secondary: "rgb(var(--color-secondary) / <alpha-value>)", // Black / Slate-50
                 accent: {
-                    cyan: "#00f3ff", // Electric Cyan
-                    violet: "#9d00ff", // Violet
+                    cyan: "rgb(var(--color-accent-cyan) / <alpha-value>)", // Electric Cyan
+                    violet: "rgb(var(--color-accent-violet) / <alpha-value>)", // Violet
                 },
                 text: {
-                    main: "#ffffff",
-                    muted: "#a0a0a0",
+                    main: "rgb(var(--color-text-main) / <alpha-value>)",
+                    muted: "rgb(var(--color-text-muted) / <alpha-value>)",
                 }
             },
             fontFamily: {

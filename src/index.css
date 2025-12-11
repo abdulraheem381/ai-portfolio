@@ -5,11 +5,35 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-primary text-text-main font-sans overflow-x-hidden;
+  :root {
+    --color-primary: 255 255 255;
+    --color-secondary: 248 250 252;
+    --color-text-main: 15 23 42;
+    --color-text-muted: 71 85 105;
+    --color-accent-cyan: 8 145 178;
+    --color-accent-violet: 126 34 206;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+
+  .dark {
+    --color-primary: 10 15 28;
+    --color-secondary: 0 0 0;
+    --color-text-main: 255 255 255;
+    --color-text-muted: 160 160 160;
+    --color-accent-cyan: 0 243 255;
+    --color-accent-violet: 157 0 255;
+  }
+
+  body {
+    @apply bg-primary text-text-main font-sans overflow-x-hidden transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading transition-colors duration-300;
   }
 }
 
@@ -19,14 +43,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0f1c;
+  background: rgb(var(--color-primary));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00f3ff;
+  background: rgb(var(--color-accent-cyan));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9d00ff;
+  background: rgb(var(--color-accent-violet));
 }

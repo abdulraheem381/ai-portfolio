@@ -39,7 +39,7 @@ const Blogs = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Latest <span className="text-accent-cyan">Articles</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">Latest <span className="text-accent-cyan">Articles</span></h2>
                     <div className="w-20 h-1 bg-accent-violet mx-auto rounded-full"></div>
                 </motion.div>
 
@@ -74,14 +74,14 @@ const Blogs = () => {
                                     <span className="text-text-muted text-xs">{blog.date}</span>
                                 </div>
 
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent-cyan transition-colors duration-300">{blog.title}</h3>
+                                <h3 className="text-xl font-bold text-text-main mb-3 group-hover:text-accent-cyan transition-colors duration-300">{blog.title}</h3>
                                 <p className="text-text-muted text-sm mb-6 line-clamp-3">{blog.excerpt}</p>
 
                                 <a
                                     href={blog.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-accent-cyan transition-colors"
+                                    className="inline-flex items-center gap-2 text-sm font-medium text-text-main hover:text-accent-cyan transition-colors"
                                 >
                                     Read on Hashnode <FaExternalLinkAlt size={12} />
                                 </a>

@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-6 md:mb-0 text-center md:text-left">
-                        <h3 className="text-2xl font-bold font-heading text-white mb-2">
+                        <h3 className="text-2xl font-bold font-heading text-text-main mb-2">
                             ABDUL <span className="text-accent-cyan">RAHEEM</span>
                         </h3>
                         <p className="text-text-muted text-sm">
@@ -27,8 +27,8 @@ const Footer = () => {
                 <div className="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-text-muted">
                     <p>&copy; {new Date().getFullYear()} Abdul. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" className="hover:text-text-main transition-colors">Privacy Policy</a>
+                        <a href="#" className="hover:text-text-main transition-colors">Terms of Service</a>
                     </div>
                 </div>
             </div>
