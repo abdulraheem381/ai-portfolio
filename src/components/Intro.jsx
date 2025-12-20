@@ -56,7 +56,7 @@ const Intro = ({ onComplete }) => {
                 }}
             >
                 <img
-                    src="/home_image2.png"
+                    src="/new_image.png"
                     alt="Abdul Raheem"
                     className="w-full h-full object-cover"
                 />
