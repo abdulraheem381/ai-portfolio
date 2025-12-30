@@ -6,33 +6,33 @@ const Services = () => {
     const services = [
         {
             icon: <FaBrain />,
-            title: "Custom ML Models",
-            description: "Tailored machine learning algorithms for predictive analytics, classification, and automation."
+            title: "Cloud Architecture",
+            description: "Designing scalable, resilient, and secure cloud infrastructures using AWS or Azure best practices."
         },
         {
             icon: <FaRobot />,
-            title: "AI Chatbots & Agents",
-            description: "Intelligent conversational AI using LLMs (OpenAI, Llama) for customer support and internal tools."
+            title: "CI/CD Automation",
+            description: "Building automated pipelines to streamline software delivery, reducing deployment time and errors."
         },
         {
             icon: <FaDatabase />,
-            title: "Data Engineering",
-            description: "Robust data pipelines, cleaning, and preprocessing to ensure your data is AI-ready."
+            title: "Connect & Orchestrate",
+            description: "Managing containerized applications with Kubernetes (EKS/AKS) for high availability and scaling."
         },
         {
             icon: <FaChartLine />,
-            title: "Exploratory Data Analysis",
-            description: "Uncovering hidden patterns and insights from your raw data with advanced visualization."
+            title: "Monitoring & Logging",
+            description: "Setting up observability stacks (Prometheus, Grafana, ELK) to ensure system health and performance."
         },
         {
             icon: <FaTools />,
-            title: "AI Tools Integration",
-            description: "Seamlessly integrating AI capabilities into your existing web or mobile applications."
+            title: "Infrastructure as Code",
+            description: "Provisioning and managing infrastructure using code (Terraform, Ansible) to ensure consistency."
         },
         {
             icon: <FaCogs />,
-            title: "ML Consulting",
-            description: "Strategic guidance on how to leverage AI to solve business problems and drive growth."
+            title: "DevSecOps",
+            description: "Integrating security practices into the DevOps pipeline to build secure applications from day one."
         }
     ];
 

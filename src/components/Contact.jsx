@@ -68,7 +68,7 @@ const Contact = () => {
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">Get In <span className="text-accent-cyan">Touch</span></h2>
                     <p className="text-text-muted max-w-xl mx-auto">
-                        Have a project in mind or want to discuss AI solutions? I'm always open to new opportunities and collaborations.
+                        Have a project in mind or want to discuss DevOps strategies? I'm always open to new opportunities and collaborations.
                     </p>
                 </motion.div>
 

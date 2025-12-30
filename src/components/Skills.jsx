@@ -4,35 +4,35 @@ import { motion } from 'framer-motion';
 const Skills = () => {
     const skills = [
         {
-            category: "Machine Learning",
+            category: "Cloud Platforms",
             items: [
-                { name: "Regression & Classification", level: 90 },
-                { name: "Scikit-Learn", level: 85 },
-                { name: "Clustering", level: 80 },
+                { name: "AWS (EC2, S3, Lambda)", level: 90 },
+                { name: "Microsoft Azure", level: 85 },
+                { name: "Google Cloud Platform", level: 75 },
             ]
         },
         {
-            category: "Deep Learning",
+            category: "CI/CD & Automation",
             items: [
-                { name: "Neural Networks (CNNs, RNNs)", level: 85 },
-                { name: "PyTorch / TensorFlow", level: 80 },
-                { name: "Transformers", level: 75 },
+                { name: "Jenkins / GitLab CI", level: 90 },
+                { name: "GitHub Actions", level: 85 },
+                { name: "ArgoCD", level: 80 },
             ]
         },
         {
-            category: "LLMs & GenAI",
+            category: "Infrastructure as Code",
             items: [
-                { name: "RAG Pipelines", level: 80 },
-                { name: "Fine-Tuning (Llama, Mistral)", level: 70 },
-                { name: "LangChain", level: 85 },
+                { name: "Terraform", level: 90 },
+                { name: "Ansible", level: 85 },
+                { name: "CloudFormation", level: 80 },
             ]
         },
         {
-            category: "Data Science",
+            category: "Containerization",
             items: [
-                { name: "Pandas & NumPy", level: 95 },
-                { name: "Data Visualization", level: 90 },
-                { name: "EDA", level: 90 },
+                { name: "Docker & Kubernetes", level: 95 },
+                { name: "Helm Charts", level: 85 },
+                { name: "Istio Service Mesh", level: 75 },
             ]
         }
     ];

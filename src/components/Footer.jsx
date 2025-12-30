@@ -11,7 +11,7 @@ const Footer = () => {
                             ABDUL <span className="text-accent-cyan">RAHEEM</span>
                         </h3>
                         <p className="text-text-muted text-sm">
-                            Building Intelligent Systems & AI Solutions.
+                            Building Scalable Cloud Infrastructure & Automation.
                         </p>
                     </div>
 

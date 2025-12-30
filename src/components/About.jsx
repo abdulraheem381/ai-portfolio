@@ -7,7 +7,7 @@ const About = () => {
         { year: '2022', title: 'Started My CS Journey (Age 15)', description: 'Discovered computer science and began exploring programming, networks, and how systems work under the hood.' },
         { year: '2023', title: 'Cybersecurity Internship', description: 'Gained hands-on experience in security fundamentals, vulnerability assessment, and real-world cyber-defense practices.' },
         { year: '2024', title: 'DevOps & Engineering Projects', description: 'Started DevOps blogging, building end-to-end real-world projects, and diving deep into CI/CD, cloud, automation, and scalable infrastructure.' },
-        { year: '2025', title: 'Transition to AI/ML', description: 'Currently focused on mastering Machine Learning & Deep Learning, building intelligent systems, and shaping a new career path in AI/ML.' },
+        { year: '2025', title: 'Transition to DevOps', description: 'Focused on mastering Cloud Native technologies, Kubernetes, and IaC to build scalable, secure, and reliable infrastructure.' },
     ];
 
     return (
@@ -35,13 +35,13 @@ const About = () => {
                             <div className="absolute -inset-1 bg-gradient-to-r from-accent-cyan to-accent-violet rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                             <div className="relative bg-primary p-6 rounded-lg border border-white/10">
                                 <p className="text-text-muted leading-relaxed mb-4">
-                                    Hello! I'm <span className="text-text-main font-bold">Abdul</span>, a passionate AI/ML Engineer dedicated to building intelligent systems that solve real-world problems.
+                                    Hello! I'm <span className="text-text-main font-bold">Abdul</span>, a passionate DevOps Engineer dedicated to optimizing software delivery and infrastructure reliability.
                                 </p>
                                 <p className="text-text-muted leading-relaxed mb-4">
-                                    My journey began with a curiosity for how machines learn, which quickly turned into an obsession with <span className="text-accent-cyan">Deep Learning</span> and <span className="text-accent-violet">Generative AI</span>.
+                                    My journey began with a curiosity for how systems operate at scale, which quickly turned into an obsession with <span className="text-accent-cyan">Cloud Native Tech</span> and <span className="text-accent-violet">Infrastructure as Code</span>.
                                 </p>
                                 <p className="text-text-muted leading-relaxed">
-                                    I don't just write code; I design solutions. Whether it's fine-tuning LLMs or deploying scalable ML pipelines, I bring a mix of technical expertise and creative problem-solving to every project.
+                                    I don't just manage servers; I architect ecosystems. Whether it's orchestrating Kubernetes clusters or building robust CI/CD pipelines, I bring a mix of operational expertise and development skills to every project.
                                 </p>
                             </div>
                         </div>

@@ -5,45 +5,45 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
     const projects = [
         {
-            title: "Customer Churn Prediction",
-            category: "Machine Learning",
-            description: "Predicting customer churn using XGBoost and Scikit-Learn with 92% accuracy.",
-            tags: ["Python", "XGBoost", "Flask"],
-            image: "bg-gradient-to-br from-blue-900 to-slate-900" // Placeholder gradient
+            title: "Scalable EKS Cluster",
+            category: "Cloud Infrastructure",
+            description: "Deployed a highly available Microservices architecture on AWS EKS with auto-scaling.",
+            tags: ["Kubernetes", "AWS", "Terraform"],
+            image: "bg-gradient-to-br from-blue-900 to-slate-900"
         },
         {
-            title: "AI Chatbot Assistant",
-            category: "GenAI / LLM",
-            description: "A RAG-based chatbot capable of answering queries from custom PDF documents.",
-            tags: ["LangChain", "OpenAI", "React"],
+            title: "Serverless Image Processing",
+            category: "Serverless",
+            description: "Event-driven architecture using AWS Lambda and S3 to process user uploads in real-time.",
+            tags: ["AWS Lambda", "Python", "SAM"],
             image: "bg-gradient-to-br from-purple-900 to-slate-900"
         },
         {
-            title: "Image Classification",
-            category: "Deep Learning",
-            description: "CNN model to classify medical images for early disease detection.",
-            tags: ["PyTorch", "CNN", "FastAPI"],
+            title: "Multi-Cloud Terraform Module",
+            category: "Infrastructure as Code",
+            description: "Created reusable Terraform modules for provisioning standard VPCs across AWS and Azure.",
+            tags: ["Terraform", "HCL", "Multi-Cloud"],
             image: "bg-gradient-to-br from-cyan-900 to-slate-900"
         },
         {
-            title: "Movie Recommender",
-            category: "Data Science",
-            description: "Collaborative filtering system to suggest movies based on user history.",
-            tags: ["Pandas", "Scikit-Learn", "Streamlit"],
+            title: "GitOps with ArgoCD",
+            category: "CI/CD",
+            description: "Implemented a GitOps workflow for Kubernetes deployments using ArgoCD and Helm charts.",
+            tags: ["ArgoCD", "GitOps", "Helm"],
             image: "bg-gradient-to-br from-indigo-900 to-slate-900"
         },
         {
-            title: "Sales Forecasting",
-            category: "Time Series",
-            description: "Forecasting future sales trends using ARIMA and Prophet models.",
-            tags: ["Prophet", "Python", "Dash"],
+            title: "Centralized Logging System",
+            category: "Observability",
+            description: "Built an ELK stack to aggregate logs from distributed services for centralized monitoring.",
+            tags: ["Elasticsearch", "Logstash", "Kibana"],
             image: "bg-gradient-to-br from-teal-900 to-slate-900"
         },
         {
-            title: "Automated Data Pipeline",
-            category: "Data Engineering",
-            description: "ETL pipeline to scrape, clean, and store real-time stock market data.",
-            tags: ["Airflow", "SQL", "AWS"],
+            title: "FinOps Dashboard",
+            category: "Cloud Cost",
+            description: "Automated cost reporting dashboard to monitor and optimize monthly cloud spend.",
+            tags: ["Python", "AWS Cost Explorer", "React"],
             image: "bg-gradient-to-br from-rose-900 to-slate-900"
         }
     ];

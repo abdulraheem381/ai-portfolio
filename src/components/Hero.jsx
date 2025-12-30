@@ -6,13 +6,13 @@ const Hero = () => {
 
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
-            {/* Background Animation (Abstract Neural Network) */}
+            {/* Background Animation (Cloud Infrastructure Grid) */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-primary to-secondary opacity-90"></div>
                 <div className="absolute top-0 left-0 w-full h-full opacity-20"
-                    style={{ backgroundImage: 'radial-gradient(#00f3ff 1px, transparent 1px)', backgroundSize: '50px 50px' }}>
+                    style={{ backgroundImage: 'radial-gradient(#00f3ff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
                 </div>
-                {/* Floating Glow Orbs */}
+                {/* Floating Infrastructure Nodes */}
                 <motion.div
                     animate={{ x: [0, 100, 0], y: [0, -50, 0] }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -34,15 +34,15 @@ const Hero = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 className="text-accent-cyan font-mono text-sm md:text-lg mb-4 tracking-widest">
-                            ABDUL RAHEEM — AI/ML ENGINEER
+                            ABDUL RAHEEM — DEVOPS ENGINEER
                         </h2>
                         <h1 className="text-4xl md:text-7xl font-bold font-heading text-text-main mb-6 leading-tight">
-                            Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-violet">Intelligent Systems</span> <br />
-                            & AI Solutions
+                            Streamlining <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-violet">Cloud Infrastructure</span> <br />
+                            & Automation
                         </h1>
                         <p className="text-text-muted text-base md:text-lg mb-8 max-w-lg mx-auto md:mx-0">
-                            Specializing in Machine Learning, Deep Learning, and Data Science.
-                            I transform complex data into actionable insights and powerful automation.
+                            Specializing in CI/CD, Kubernetes, and Cloud Architecture.
+                            I design scalable, secure, and efficient systems for modern software delivery.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

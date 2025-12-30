@@ -7,20 +7,31 @@
 @layer base {
   :root {
     --color-primary: 255 255 255;
-    --color-secondary: 248 250 252;
+    --color-secondary: 241 245 249;
+    /* Slate 100 */
     --color-text-main: 15 23 42;
+    /* Slate 900 */
     --color-text-muted: 71 85 105;
-    --color-accent-cyan: 8 145 178;
-    --color-accent-violet: 126 34 206;
+    /* Slate 600 */
+    --color-accent-cyan: 2 132 199;
+    /* Sky 600 - Professional Blue */
+    --color-accent-violet: 16 185 129;
+    /* Emerald 500 - Success/Infra Green */
   }
 
   .dark {
-    --color-primary: 10 15 28;
-    --color-secondary: 0 0 0;
-    --color-text-main: 255 255 255;
-    --color-text-muted: 160 160 160;
-    --color-accent-cyan: 0 243 255;
-    --color-accent-violet: 157 0 255;
+    --color-primary: 15 23 42;
+    /* Slate 900 */
+    --color-secondary: 2 6 23;
+    /* Slate 950 */
+    --color-text-main: 248 250 252;
+    /* Slate 50 */
+    --color-text-muted: 148 163 184;
+    /* Slate 400 */
+    --color-accent-cyan: 56 189 248;
+    /* Sky 400 - Bright Blue */
+    --color-accent-violet: 52 211 153;
+    /* Emerald 400 - Neon Green */
   }
 
   body {
