@@ -23,7 +23,7 @@ const Contact = () => {
         e.preventDefault();
         setStatus({ submitting: true, success: false, error: null });
 
-        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyLR4fJt03Ql8SEDWRMA8lh8vqBo7TsKZmh14b4TM7TjZMs29CE4NZtOUnTxEipWqeCjQ/exec";
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbw1Fh7n7638I68TnDvFBN7jY76oEIdaSrNJjh6qWKbOLoL0bVnkkKfr1HavmJ6g-_L4/exec";
 
         try {
             await fetch(WEB_APP_URL, {
