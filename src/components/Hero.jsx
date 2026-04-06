@@ -53,8 +53,8 @@ const Hero = () => {
                                 Let's Work Together <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                             </a>
                             <a
-                                href="/resume.html"
-                                download
+                                href="/resume.pdf"
+                                download="resume.pdf"
                                 className="px-8 py-4 border border-text-main/20 text-text-main font-bold rounded-full hover:bg-text-main/10 transition-all duration-300 flex items-center justify-center gap-2"
                             >
                                 Download Resume <FaDownload />
